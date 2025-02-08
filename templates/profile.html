@@ -158,41 +158,40 @@
             </ul>
         </nav>
     </header>
-    <div class="profilezone">
-        <div class="profileinfo">
-            <div class="profile_shortinfo">
-                <img id="profile_shortinfo_profilepicture" src="../images/profile_images/{{ profilephotorequested }}.jpg">
-                <div class="profile_shortinfo_name">
-                    <div class="profile_shortinfo_name_basicname"> {{ profilenamerequested }}</div>
-                    <div class="profile_shortinfo_uniquename"> {{ profileuniquenamerequested }}</div>
+    {% if hobby %}
+        <div class="profilezone">
+            <div class="profileinfo">
+                <div class="profile_shortinfo">
+                    <img id="profile_shortinfo_profilepicture" src="../images/profile_images/{{ profilephotorequested }}.jpg">
+                    <div class="profile_shortinfo_name">
+                        <div class="profile_shortinfo_name_basicname"> {{ user.name }}</div>
+                        <div class="profile_shortinfo_uniquename"> {{ user.uniquename }}</div>
+                    </div>
                 </div>
-            </div>
-            <div class="profile_statistics">
-                <div class="profile_statistics_rating">
-                    <div class="profile_statistics_flex_position">
-                        <span class="material-symbols-outlined" id="profile_statistics_ratingsymbol">star_rate</span>
-                    <div class="profile_statistics_rating_variable" id="moveout">{{ profileratingrequested }}</div>
+                <div class="profile_statistics">
+                    <div class="profile_statistics_rating">
+                        <div class="profile_statistics_flex_position">
+                            <span class="material-symbols-outlined" id="profile_statistics_ratingsymbol">star_rate</span>
+                        <div class="profile_statistics_rating_variable" id="moveout">{{ user.rating }}</div>
                     </div>
                     <div class="profile_statistics_title" id="movedown">Рейтинг</div>
                 </div>
                 <div class="profile_statistics_success_percent">
                     <div class="profile_statistics_flex_position">
                         <span class="material-symbols-outlined">mood</span>
-                    <div class="profile_statistics_success_percent_variable" id="moveout">{{ profilesuccessrequested }} %</div>
+                    <div class="profile_statistics_success_percent_variable" id="moveout">{{ user.success_rating }} %</div>
                     </div>
                     <div class="profile_statistics_title" id="movedown">Успешных заказов</div>
                 </div>
+                <div class="profileinfo_bio">
+                    <div class="profileinfo_bio_title">Описание</div>
+                    <div class="profileinfo_bio_bio">{{ user.bio }}</div>
+                </div>
             </div>
-            <div class="profileinfo_bio">
-                <div class="profileinfo_bio_title">Описание</div>
-                <div class="profileinfo_bio_bio">{{ profilebiorequested }}</div>
-            </div>
+            <div class="hobbies">
+                {{ hobbydata.user_id }}
+            </div>  
         </div>
-        <div class="hobbies">
-            {{ hobbiesrequested }}
-        </div>
-        
-    </div>
     <div class="down_page_global">
         <div class="down_page_global_list1">
             <a href="http://127.0.0.1:3000/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
