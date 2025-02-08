@@ -1,0 +1,18 @@
+{
+  "1": {
+    "name": "Михаил Черникин",
+    "uniquename": "cernikin",
+    "rating": 5,
+    "success_rating": 100,
+    "bio": "Привет! Звать меня Михаил, любитель программировать и всякого разного.",
+    "status": 6
+  },
+  "2": {
+    "name": "ричи",
+    "uniquename": "richisky",
+    "rating": 5,
+    "success_rating": 100,
+    "bio": "программист или программистка.",
+    "status": 6
+  }
+}
