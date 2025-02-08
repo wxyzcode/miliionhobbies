@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ hobby_found_result }} хобби | millionhobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+        margin: 0;
+    }
+        header {
+        background-color: #ffffff; /* Зеленый цвет */
+        color: #6578d7;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: none; /* Распределяет элементы по краям */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        font-family: "Cutive Mono";
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none; /* Убирает маркеры списка */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Выстраивает элементы в ряд */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Отступ между пунктами меню */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* Убирает подчеркивание */
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+    .down_page_global {
+        width: 100%;
+        height: 350px;
+
+        background-color: rgb(43, 43, 43);
+    }
+    .down_page_global_list1 {
+        padding: 40px;
+    }
+    #link {
+        color: rgba(255, 255, 255, 0.541);
+        text-decoration: none;
+        font-family: 'Raleway';
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+    #link:hover {
+        animation: background 0.5s forwards;
+    }
+    .down_page_global_list_socialpages {
+        font-family: 'Raleway';
+        
+    }
+    #social_link {
+        color: #ffffff77;
+        text-decoration: none;
+        justify-content: center;
+        display:flex;
+    }
+    @keyframes background {
+        0% {
+
+        }
+        100% {
+            background-color: #4d4d4d;
+        }
+    }
+    .search_results-title {
+        padding: 15px;
+        margin-left: 10px;
+        font-size: x-large;
+        font-family: 'Raleway';
+        font-weight: 500;
+    }
+    .search_results-desc {
+        margin-left: 25px;
+        font-family: 'Raleway';
+    }
+    .search-field {
+        padding: 12.5%;
+        margin-top: 75px;
+    }
+    .search-input {
+        border: #6578d7 2px solid;
+        border-radius: 15px;
+        height: 30px;
+        width: calc(100% - 100px);
+    }
+    .search-field_search {
+        position: relative;
+    }
+    .search-field-title {
+        font-size: xx-large;
+        font-weight: 600;
+        padding-bottom: 0px;
+        margin-bottom: -100px;
+    }
+    .search-button {
+        border: #6578d7 2px solid;
+        border-radius: 11px;
+        color: white;
+        background-color: #6578d7;
+        font-family: 'Raleway';
+        width: 95px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        margin-left: calc(100% - 90px);
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .search-input::placeholder {
+        color: #b3b3b3;
+        padding: 10px;
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+    .search-input:focus {
+        font-family: 'Raleway';
+        font-weight: 800;
+    }
+    .search-button:hover {
+        cursor: pointer;
+        animation: btn_bg 0.25s forwards;
+    }
+    @keyframes btn_bg {
+        0% {
+            background-color: #6578d7;
+        }
+        100% {
+            background-color: #4960dd;
+            border: #4960dd 2px solid;
+        }
+    }
+    .search-result_button {
+        width: 92%;
+        background-color: #d6d6d6;
+        font-family: 'Raleway';
+        margin-left: 2%;
+        margin-top: 15px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .search-result_button-title {
+        font-weight: 700;
+        font-size: 36px;
+    }
+    #w {
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .write-me {
+        margin-left: 2.5%;
+        width: 95%;
+        font-family: 'Raleway';
+        font-weight: 600;
+        border: #4960dd 2px solid;
+        background-color: #4960dd;
+        border-radius: 10px;
+        height: 25px;
+        color: #ffffff;  
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/templates/main.html">Главная</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/search.html">Хобби</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/main_page/user_profile/settings.html">Настройки</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/main_page/user_profile/profile.html">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search_results">
+        <div class="search_results-title">Нашли <b>{{ hobby_found_result }}</b> хобби по вашему поиску</div>
+    </div>
+    <div class="search-field">
+        <div class="search-field-title" id="q"></div>
+        <div class="search-field-description" id="q"></div>
+        <div class="search-field_search">
+            <div class="search-field_search_input">
+                <input class="search-input" placeholder="@пользователь, тег">
+            </div>
+            <div class="search-field_search_button">
+                <button class="search-button">Поиск</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="http://127.0.0.1:3000/templates/main_page/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://127.0.0.1:3000/templates/main_page/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
+</body>
+</html>
