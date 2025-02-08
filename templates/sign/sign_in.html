@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница | millionhobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background-image: url('background/winter/winter_1.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    header {
+        background-color: #ffffff; /* Зеленый цвет */
+        color: #6578d7;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: none; /* Распределяет элементы по краям */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        font-family: "Cutive Mono";
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none; /* Убирает маркеры списка */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Выстраивает элементы в ряд */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Отступ между пунктами меню */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* Убирает подчеркивание */
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+        .login_box {
+            width: 65%;
+            background-color: rgba(255, 255, 255, 0.24);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.404);
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+        }
+        .login_desc {
+            text-align: center;
+            margin-top: 25px;
+            color: rgb(223, 234, 248);
+        }
+        .login_desc_title {
+            font-family: 'Raleway', serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .login_desc_description {
+            font-family: 'Raleway', serif;
+            font-weight: 500;
+            font-size: 85%;
+            margin: 0 auto;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .logindetails {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10% auto;
+            width: 80%;
+        }
+        .logindetails input{
+            border-radius: 15px;
+            border: 2px solid white;
+            margin-top: 10px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.062);
+            color: white;
+        }
+        .logindetails input::placeholder{
+            color: aliceblue;
+            opacity: 0.7;
+            font-family: 'Raleway', serif;
+            font-weight: 400;
+        }
+        .y {
+            padding: 15px;
+            font-family: 'Raleway', serif;
+            font-weight: 600;
+        }
+        #data {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.699);
+            font-weight: 700;
+            font-family: 'Raleway';
+            margin-top: 15px;
+            font-size: 10px;
+        }
+        .button {
+            margin: 15px 15px;
+            padding-top: 60px;
+        }
+        #login_button {
+            border-radius: 10px;
+            border: 2px solid #383bff;
+            background-color: #383bff;
+            width: 100%;
+            height: 60px;
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 24px;
+            color: antiquewhite;
+            box-shadow: 0px 0px 15px #383bff;
+        }
+        .down_page_global {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(43, 43, 43);
+            margin-top: 200px;
+        }
+        .down_page_global_list1 {
+            padding: 40px;
+        }
+        #link {
+            color: rgba(255, 255, 255, 0.541);
+            text-decoration: none;
+            font-family: 'Raleway';
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+        }
+        #link:hover {
+            animation: background 0.5s forwards;
+        }
+        .down_page_global_list_socialpages {
+            font-family: 'Raleway';
+        
+        }
+        #social_link {
+            color: #ffffff77;
+            text-decoration: none;
+            justify-content: center;
+            display:flex;
+        }
+        @keyframes background {
+            0% {
+
+            }
+            100% {
+                background-color: #4d4d4d;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/templates/main.html">Главная</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/search.html">Хобби</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/main_page/user_profile/settings.html">Настройки</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/main_page/user_profile/profile.html">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login_box">
+            <div class="login_desc">
+                <div class="login_desc_title">Войти</div>
+                <div class="login_desc_description">Войдите для полного доступа к millionhobbies и к своему аккаунту.</div>
+            </div>
+            <div class="logindetails">
+                <input type="login-username" class="y" placeholder="Почта">
+                <input type="login-password" class="y" placeholder="Пароль">
+                <a href="https://example.com" id="data">Я забыл данные аккаунта</a>
+            </div>
+            <div class="button">
+                <button id="login_button">Войти</div>
+                <div id="icon"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="http://127.0.0.1:3000/templates/main_page/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://127.0.0.1:3000/templates/main_page/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
+</body>
+</html>
