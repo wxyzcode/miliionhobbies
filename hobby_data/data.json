@@ -1,0 +1,50 @@
+{
+  "1": {
+    "title": "Бисер",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "Это хобби позволяет вам плести из бисера.",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  },
+  "2": {
+    "title": "Программирование",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "python/html/flask/json",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  },
+  "3": {
+    "title": "Ремонт",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "Ремонт компьютеров и телефонов Pixel",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  },
+  "4": {
+    "title": "Фриланс на создания логотипах",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "Научу делать деньги с помощью создания логотипа",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  },
+  "5": {
+    "title": "Создание проектов Sber Z",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "Это - Сбер, который научит вас настоящему бизнесу",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  },
+  "6": {
+    "title": "Алмазная вышивка",
+    "profile_id": "1",
+    "description": {
+      "hobby_desc": "Алмазная вышивка и её основы",
+      "hobby_link": "t.me/whitec10ud"
+    }
+  }
+}
