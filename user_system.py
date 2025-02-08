@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key' 
+app.secret_key = 'cc28684343b3e196ccabe16b18431332e1714441e71e0c4bc683629029b4c55870be7c10aec9a7f9f075114202543b0a' 
 
 def get_db_connection():
     conn = sqlite3.connect('users.db')
