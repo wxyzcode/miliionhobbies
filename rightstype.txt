@@ -1,0 +1,42 @@
+0 - Нулевые права, присутствуют у заблокированных пользователей
+1 - Нормальные права, присутствуют у обычных пользователей
+2 - Права хоббивода, присутствуют у хоббиводов
+3 - Права временного модератора
+4 - Права модератора
+5 - Сверхправа, присутствуют у администраторов и со-основателей
+6 - Суперправа, присутствуют у основателей
+
+0 - Обычный пользователь
+1 - Хоббиводы
+2 - Модераторы и т.д.
+3 - Суперпользователь
+
+ОЧЕНЬ НУЖНО
+Шапка
+    <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#search">Хобби</a></li>
+                <li><a href="#settings">Настройки</a></li>
+                <li><a href="#contact">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+Нижнее меню
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="" class="down_page_global_1_privacy-policy" id="link">Политика конфиденциальности</a>
+            <a href="" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="" class="down_page_global_1_for-hobby-people" id="link">Для хоббиводов</a>
+            <a href="" class="down_page_global_1_for-people" id="link">Для пользователей</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
