@@ -16,13 +16,10 @@ def load_data():
 
 @app.route('/templates/profile.html')
 def profile():
-    # Получаем ID из URL (после #)
     user_id = request.args.get('id')
     
-    # Загружаем данные
     data = load_data()
-    
-    # Ищем хобби по ID
+
     hobby = data.get(user_id)
 
     return render_template('profile.html', hobby=hobby)
