@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница | millionhobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background-image: url('1_main.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+
+    header {
+        background-color: #ffffff; /* Зеленый цвет */
+        color: #6578d7;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: none; /* Распределяет элементы по краям */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        font-family: "Cutive Mono";
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none; /* Убирает маркеры списка */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Выстраивает элементы в ряд */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Отступ между пунктами меню */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* Убирает подчеркивание */
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+    .down_page_global {
+        width: 100%;
+        height: 350px;
+        background-color: rgb(43, 43, 43);
+    }
+    .down_page_global_list1 {
+        padding: 40px;
+    }
+    #link {
+        color: rgba(255, 255, 255, 0.541);
+        text-decoration: none;
+        font-family: 'Raleway';
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+    #link:hover {
+        animation: background 0.5s forwards;
+    }
+    .down_page_global_list_socialpages {
+        font-family: 'Raleway';
+        
+    }
+    #social_link {
+        color: #ffffff77;
+        text-decoration: none;
+        justify-content: center;
+        display:flex;
+    }
+    @keyframes background {
+        0% {
+
+        }
+        100% {
+            background-color: #4d4d4d;
+        }
+    }
+    .header_text {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Montserrat';
+    }
+    .header_text-title {
+        margin-top: 150px;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 42px;
+    }
+    .header_text-desc {
+        font-family: 'Raleway';
+        margin: 10px;
+        font-size: 14px;
+    }
+    .search_fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search_fill-input {
+        width: 80%;
+        max-width: 550px;
+        margin-top: 30px;
+        height: 40px;
+        border: 1px #fff solid;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.048);
+        color: #fff;
+    }
+    .search_fill-input::placeholder {
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat';
+        padding: 10px;
+    }
+    .search_fill-input input {
+        margin-left: -10px;
+    }
+    .about {
+        background-color: #fff;
+        height: 1575px;
+        margin-top: 150px;
+    }
+    .search_buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    #y {
+        font-family: 'Raleway';
+        font-weight: 600;
+        border: 2px #6578d7 solid;
+        border-radius: 10px;
+        color: white;
+        background-color: #6578d7;
+    }
+    .about_pluses_area {
+        display: flexbox;
+        font-family: 'Raleway';
+        background-color: #ffffff;
+        align-items: center;
+    }
+    #q {
+        width: 100%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    #box {
+        display: relative;
+        border-radius: 15px;
+        margin: 5px;
+        height: 200px;
+        color: rgba(0, 0, 0, 0.74);
+        background: linear-gradient(#6578d7, #566ddd);     
+    }
+        #box-title {
+            line-height: 20px;
+            font-weight: 700;
+            font-size: 32px;
+        }
+        #box-desc {
+            font-weight: 500;
+            font-size: 18px;
+
+        }
+        .about-text {
+            font-family: 'Raleway';
+            padding: 50px;
+        }
+        .about_pluses-title {
+            font-size: xxx-large;
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 700;
+        }
+        .center_item {
+            width: 100%;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/templates/main.html">Главная</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/search.html">Хобби</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/settings.html">Настройки</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/profile.html">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header_text">
+        <div class="header_text-title">Пришли согреться к нам?</div>
+        <div class="header_text-desc">Да-да, к нам! Вбивайте в поиск, что вам нужно. Снизу - наши плюсы платформы</div>
+    </div>
+    <div class="search_fill">
+        <input class="search_fill-input" placeholder="Попробуйте то, что прийдет в голову">
+    </div>
+    <div class="search_buttons">
+        <div class="button_searchhobby">
+            <button class="button_searchhobby_btn" id="y">Искать</button>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about-text">
+            Мы - <b>платформа millionhobbies</b>, Онлайн-платформа, где люди могут обмениваться навыками и умениями. Например, кто-то может предложить уроки игры на гитаре в обмен на уроки кулинарии. Это создаст сообщество и позволит людям обучаться новому, не тратя деньги.
+        </div>
+        <div class="about_pluses">
+            <div class="about_pluses-title">Плюсы</div>
+            <div class="about_pluses_area">
+                <div class="center_item">
+                    <div class="about_us_box-description_boxes0" id="box">
+                        <div class="about_us_box-description_boxes0-title" id="box-title">
+                            Очень много навыков на выбор
+                        </div>
+                        <div class="about_us_box-description_boxes0-description" id="box-desc">
+                            Чтобы вам не было скучно, у хоббиводов есть 150+ хобби и навыков на ваш выбор. Так, вы можете найти ваш любимый навык или хобби намного быстрее!
+                        </div>
+                    </div>
+                    <div class="about_us_box-description_boxes1" id="box">
+                        <div class="about_us_box-description_boxes1-title" id="box-title">
+                            Без обмана
+                        </div>
+                        <div class="about_us_box-description_boxes1-description" id="box-desc">
+                            Мы рассматриваем всех хоббиводов чщательно по всем характеристикам, чтобы никто не смог обмануть вас.
+                        </div>
+                    </div>
+                    <div class="about_us_box-description_boxes2" id="box">
+                        <div class="about_us_box-description_boxes2-title" id="box-title">
+                            Удобность в использовании
+                        </div>
+                        <div class="about_us_box-description_boxes2-description" id="box-desc">
+                            Мы продумали все, чтобы каждый мог использовать сервис для своих целей.
+                        </div>
+                    </div>
+                    <div class="about_us_box-description_boxes3" id="box">
+                        <div class="about_us_box-description_boxes3-title" id="box-title">
+                            Человеческая поддержка. 100%. 24 на 7
+                        </div>
+                        <div class="about_us_box-description_boxes3-description" id="box-desc">
+                            Мы всегда делаем всё для людей, чтобы они получили правильный ответ от нас.
+                        </div>
+                    </div>
+                    <div class="about_us_box-description_boxes4" id="box">
+                        <div class="about_us_box-description_boxes4-title" id="box-title">
+                            Используйте нас везде.
+                        </div>
+                        <div class="about_us_box-description_boxes4-description" id="box-desc">
+                            Даже если вы далеко от компьютера, вы можете использовать сервис на мобильном устройстве.
+                        </div>
+                    </div>
+                    <div class="about_us_box-description_boxes5" id="box">
+                        <div class="about_us_box-description_boxes5-title" id="box-title">
+                            Все это - бесплатно
+                        </div>
+                        <div class="about_us_box-description_boxes5-description" id="box-desc">
+                            Мы обеспечиваем и делаем все услуги бесплатными.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="http://127.0.0.1:3000/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://127.0.0.1:3000/templates/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
+</body>
+</html>

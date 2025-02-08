@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки | millionhobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .down_page_global {
+        width: 100%;
+        height: 350px;
+        background-color: rgb(43, 43, 43);
+        margin-top: 200px;
+    }
+    .down_page_global_list1 {
+        padding: 40px;
+    }
+    #link {
+        color: rgba(255, 255, 255, 0.541);
+        text-decoration: none;
+        font-family: 'Raleway';
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+    #link:hover {
+        animation: background 0.5s forwards;
+    }
+    .down_page_global_list_socialpages {
+        font-family: 'Raleway';
+        
+    }
+    #social_link {
+        color: #ffffff77;
+        text-decoration: none;
+        justify-content: center;
+        display:flex;
+    }
+    @keyframes background {
+        0% {
+
+        }
+        100% {
+            background-color: #4d4d4d;
+        }
+    }
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-color: #ffffff; /* Зеленый цвет */
+        color: #6578d7;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: none; /* Распределяет элементы по краям */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        font-family: "Cutive Mono";
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none; /* Убирает маркеры списка */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Выстраивает элементы в ряд */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Отступ между пунктами меню */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* Убирает подчеркивание */
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/templates/main.html">Главная</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/search.html">Хобби</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/settings.html">Настройки</a></li>
+                <li><a href="http://127.0.0.1:3000/templates/profile.html">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="settings-field">
+        <div class="settings-title">
+            Настройки
+        </div>
+    </div>
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="http://127.0.0.1:3000/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://127.0.0.1:3000/templates/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
+</body>
+</html>
