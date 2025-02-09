@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>HTML Document Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+    }
+        header {
+        background-color: #ffffff; /* Зеленый цвет */
+        color: #6578d7;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: none; /* Распределяет элементы по краям */
+        align-items: center; /* Выравнивание по центру по вертикали */
+        font-family: "Cutive Mono";
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none; /* Убирает маркеры списка */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Выстраивает элементы в ряд */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Отступ между пунктами меню */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* Убирает подчеркивание */
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline; /* Подчеркивание при наведении */
+    }
+    .down_page_global {
+        width: 100%;
+        height: 350px;
+
+        background-color: rgb(43, 43, 43);
+    }
+    .down_page_global_list1 {
+        padding: 40px;
+    }
+    #link {
+        color: rgba(255, 255, 255, 0.541);
+        text-decoration: none;
+        font-family: 'Raleway';
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+    #link:hover {
+        animation: background 0.5s forwards;
+    }
+    .down_page_global_list_socialpages {
+        font-family: 'Raleway';
+        
+    }
+    #social_link {
+        color: #ffffff77;
+        text-decoration: none;
+        justify-content: center;
+        display:flex;
+    }
+    @keyframes background {
+        0% {
+
+        }
+        100% {
+            background-color: #4d4d4d;
+        }
+    }
+    .details ul li {
+        list-style: none;
+    }
+    .details input {
+        width: 50%;
+    }
+    .details input{
+            border-radius: 10px;
+            border: 1px solid black;
+            margin-top: 10px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.062);
+            color: black;
+        }
+        .logindetails input::placeholder{
+            color: aliceblue;
+            opacity: 0.7;
+            font-family: 'Raleway', serif;
+            font-weight: 400;
+        }
+        .y {
+            padding: 7.5px;
+            font-family: 'Raleway', serif;
+            font-weight: 600;
+        }
+        .create_hobby-title {
+            margin-top: 20px;
+            padding: 10px;
+            font-family: 'Raleway', serif;
+            font-weight: 700;
+            font-size: 24px;
+            margin-left:20px;
+        }
+        .create_hobby-desc {
+            padding: 5px;
+            font-family: 'Raleway', serif;
+            font-weight: 500;
+            font-size: 18px; 
+            margin-left:25px;
+            margin-bottom:30px;
+        }
+        .create_hobby-desc-desc {
+            padding: 5px;
+            font-family: 'Raleway', serif;
+            font-weight: 500;
+            font-size: 14px; 
+            margin-bottom:5px;
+        }
+        .create_hobby-desc-desc-desc {
+            padding: 50px;
+            font-family: 'Raleway', serif;
+            font-weight: 500;
+            font-size: 12px; 
+            margin-bottom:5px;
+            color: gray;
+        }
+        }
+        .button {
+            margin: 15px 15px;
+            padding-top: 60px;
+            
+        }
+        #login_button {
+            border-radius: 10px;
+            border: 2px solid #383bff;
+            background-color: #383bff;
+            width: 75%;
+            height: 60px;
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 24px;
+            color: antiquewhite;
+            box-shadow: 0px 0px 10px #383bff;
+            margin-left: 12.5%;
+            margin-bottom: 60px;
+        }
+  </style>
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <h1>millionhobbies</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://host1877556.hostland.pro/templates/main.html">Главная</a></li>
+                <li><a href="http://host1877556.hostland.pro/templates/search.html">Хобби</a></li>
+                <li><a href="http://host1877556.hostland.pro/templates/settings.html">Настройки</a></li>
+                <li><a href="http://host1877556.hostland.pro/templates/profile.html">Мой профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="create_hobby-title">Создание хобби</div>
+    <div class="create_hobby-desc">Создайте хобби на нашем сайте и ожидайте заявок от пользователей.</div>
+    <div class="details">
+        <ul>
+                <li><input type="hobbyname-create" class="y" placeholder="Имя хобби"></li>
+                <div class="create_hobby-desc-desc">Имя хобби, которое вы хотите преподавать пользователям.</div>
+                <input type="hobbydesc-create" class="y" placeholder="Описание хобби">
+                <div class="create_hobby-desc-desc">Вы можете сделать описание к хобби, и что будет входить в ваше обучение по хобби. Также может быть полезно, если вы хотите сделать дополнительную информацию.</div>
+                <input type="hobbylink-create" class="y" placeholder="Ссылка на ваш Telegram">
+                <div class="create_hobby-desc-desc">Привяжите ссылку на ваш Telegram-профиль, чтобы вы договорились о встрече.</div>
+        </ul>
+        <div class="create_hobby-desc-desc-desc">Опубликовывая ваше хобби на онлайн-платформе millionhobbies, вы соглашаетесь с тем, что ваше хобби не нарушает правила поведения millionhobbies (о которых можно узнать на нижнем разделе сайта через мини-раздел Правила сайта), и вы несёте всю ответственность за содержание, которое содержит хобби. Администрация вправе удалить хобби без разъяснения причин.</div>
+    </div>
+    <div class="button">
+                <button id="login_button">Создать</div>
+                <div id="icon"></div>
+            </div>
+    
+    <div class="down_page_global">
+        <div class="down_page_global_list1">
+            <a href="http://host1877556.hostland.pro/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://host1877556.hostland.pro/templates/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+        </div>
+        <div class="down_page_global_list_socialpages">
+            <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
+            <a href="https://t.me/millionhobbies" id="social_link"><b>Telegram</b></a>
+            <div id="social_link" class="copyright_disclaimer">© millionhobbies™ 2024-2025. Все права защищены.</div>
+        </div>
+    </div>
+</body>
+</html>
