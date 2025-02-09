@@ -5,24 +5,23 @@ import os
 app = Flask(__name__)
 
 # Путь к файлу JSON
-DATA_JSON_PATH = 'user_data/data.json'
+DATA_JSON_PATH = 'stats.json'
+
 
 def load_data():
-    """Загрузить данные из JSON файла."""
     if os.path.exists(DATA_JSON_PATH):
         with open(DATA_JSON_PATH, 'r', encoding='utf-8') as file:
             return json.load(file)
     return {}
 
-@app.route('/templates/profile.html')
+
+@app.route('/templates/search.html')
 def profile():
-    user_id = request.args.get('id')
-    
-    data = load_data()
-
-    user = data.get(user_id)
-
-    return render_template('profile.html', user=user)
+    hobby_data = load_data()
+    hobby = hobby_data['hobbies']
+    user_data = load_data()
+    user = user_data['users']
+    return render_template('search.html', users=user, hobbies=hobby)
 
 if __name__ == '__main__':
     app.run(debug=True)

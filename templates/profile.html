@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ profilenamerequested_1 }} | millionhobbies</title>
+    <title>{{ user.uniquename }} | millionhobbies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -158,11 +158,11 @@
             </ul>
         </nav>
     </header>
-    {% if hobby %}
+    {% if user %}
         <div class="profilezone">
             <div class="profileinfo">
                 <div class="profile_shortinfo">
-                    <img id="profile_shortinfo_profilepicture" src="../images/profile_images/{{ profilephotorequested }}.jpg">
+                    <img id="profile_shortinfo_profilepicture" src="../images/profile_images/{{ user.id }}.jpg">
                     <div class="profile_shortinfo_name">
                         <div class="profile_shortinfo_name_basicname"> {{ user.name }}</div>
                         <div class="profile_shortinfo_uniquename"> {{ user.uniquename }}</div>
@@ -189,10 +189,11 @@
                 </div>
             </div>
         </div>
+    {% endif %}
     <div class="down_page_global">
         <div class="down_page_global_list1">
-            <a href="http://127.0.0.1:3000/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
-            <a href="http://127.0.0.1:3000/templates/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
+            <a href="http://127.0.0.1:5000/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
+            <a href="http://127.0.0.1:5000/templates/about_us.html" class="down_page_global_1_for-hobby-people" id="link">О нас</a>
         </div>
         <div class="down_page_global_list_socialpages">
             <a href="" id="social_link"><b>ВКонтакте</b></a> <div id="social_link">•</div>
