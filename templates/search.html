@@ -170,15 +170,16 @@
         <div class="search-field-description" id="q">Среди нас - <b>{{ hobbies }}</b> хобби и <b>{{ users }}</b> - количество юзеров</div>
         <div class="search-field_search">
             <div class="search-field_search_input">
-                <input class="search-input" placeholder="@пользователь, тег">
+                <form action="/search_results" method="get">
+                    <input class="search-input" placeholder="@пользователь, тег">
+                </form>
             </div>
             <div class="search-field_search_button">
-                <button class="search-button">Поиск</button>
+                <form action="/search_results" method="get">
+                    <button class="search-button">Поиск</button>
+                </form>
             </div>
         </div>
-    </div>
-    <div class="hidden-text">
-        
     </div>
     <div class="down_page_global">
         <div class="down_page_global_list1">
