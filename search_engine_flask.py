@@ -1,48 +1,25 @@
+from flask import Flask, render_template, request
 import json
-import os
-from flask import Flask, request, render_template
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hobbies.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
 
-class Hobby(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100), unique=True, nullable=False)
-    profile_id = db.Column(db.String(50), nullable=False)
-    hobby_desc = db.Column(db.String(255), nullable=False)
-    hobby_link = db.Column(db.String(255), nullable=False)
+def load_data():
+    with open('hobby_data/data.json', 'r') as f:
+        return json.load(f)
 
-# Функция для инициализации базы данных из JSON
-def init_db():
-    if not os.path.exists('hobbies.db'):
-        db.create_all()
-        with open('data.json', 'r') as file:
-            data = json.load(file)
-            for key, value in data.items():
-                new_hobby = Hobby(
-                    title=value['title'].lower(),  # Преобразуем в нижний регистр
-                    profile_id=value['profile_id'],
-                    hobby_desc=value['description']['hobby_desc'],
-                    hobby_link=value['description']['hobby_link']
-                )
-                db.session.add(new_hobby)
-            db.session.commit()
-
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    search_query = request.form.get('search', '').lower()  # Преобразуем в нижний регистр
-    page = request.args.get('page', 1, type=int)
-    
-    if search_query:
-        hobbies = Hobby.query.filter(Hobby.title.contains(search_query)).paginate(page=page, per_page=5)
-    else:
-        hobbies = Hobby.query.paginate(page=page, per_page=5)
+    return render_template('index.html')
 
-    return render_template('index.html', hobbies=hobbies, search_query=search_query)
+@app.route('/search_results')
+def search_results():
+    query = request.args.get('query', '')
+    data = load_data()
+
+    results = [item for item in data if query.lower() in item['name'].lower() or query.lower() in item['description'].lower()]
+    
+    return render_template('search_results.html', query=query, results=results)
 
 if __name__ == '__main__':
-    init_db()  # Инициализируем базу данных
     app.run(debug=True)
+
