@@ -1,4 +1,9 @@
-|| Структура для создания хобби
+# millionhobbies
+## Open-source платформа для поиска хобби
+
+## Сайт: http://host1877556.hostland.pro/templates/main.html (планируем перейти на millionhobbies.ru)
+
+|| структура для добавления хобби
 <div class="search-result_button">
     <div class="search-result_button-title" id="w">
         title
