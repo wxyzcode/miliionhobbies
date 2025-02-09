@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ hobby_found_result }} хобби | millionhobbies</title>
+    <title>{{ n }} хобби найдено по запросу | millionhobbies</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -196,8 +196,8 @@
         </nav>
     </header>
     <div class="search_results">
-        <div class="search_results-title">Нашли <b>{{ hobby_result }}</b> хобби по вашему поиску</div>
-        <div class="search_results-title">Найти другое</div>
+        <div class="search_results-title">Нашли <b>{{ n }}</b> хобби по вашему поиску</div>
+        <a href="/search" class="search_results-title">Найти другое</div>
     </div>
     {% if results %}
         {% for hobby in results %}
