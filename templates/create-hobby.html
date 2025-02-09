@@ -176,22 +176,23 @@
     </header>
     <div class="create_hobby-title">Создание хобби</div>
     <div class="create_hobby-desc">Создайте хобби на нашем сайте и ожидайте заявок от пользователей.</div>
-    <div class="details">
+    <form action="/create-hobby-result" method="get">
+      <div class="details">
         <ul>
-                <li><input type="hobbyname-create" class="y" placeholder="Имя хобби"></li>
-                <div class="create_hobby-desc-desc">Имя хобби, которое вы хотите преподавать пользователям.</div>
-                <input type="hobbydesc-create" class="y" placeholder="Описание хобби">
-                <div class="create_hobby-desc-desc">Вы можете сделать описание к хобби, и что будет входить в ваше обучение по хобби. Также может быть полезно, если вы хотите сделать дополнительную информацию.</div>
-                <input type="hobbylink-create" class="y" placeholder="Ссылка на ваш Telegram">
-                <div class="create_hobby-desc-desc">Привяжите ссылку на ваш Telegram-профиль, чтобы вы договорились о встрече.</div>
+          <li><input type="hobbyname-create" class="y" placeholder="Имя хобби" name="hobby_name"></li>
+          <div class="create_hobby-desc-desc">Имя хобби, которое вы хотите преподавать пользователям.</div>
+          <input type="hobbydesc-create" class="y" placeholder="Описание хобби" name="hobby_desc">
+          <div class="create_hobby-desc-desc">Вы можете сделать описание к хобби, и что будет входить в ваше обучение по хобби. Также может быть полезно, если вы хотите сделать дополнительную информацию.</div>
+          <input type="hobbylink-create" class="y" placeholder="Ссылка на ваш Telegram" name="hobby_link">
+          <div class="create_hobby-desc-desc">Привяжите логин без <b>@</b> на ваш Telegram-профиль, чтобы вы договорились о встрече. (например, telegramuser)</div>
         </ul>
         <div class="create_hobby-desc-desc-desc">Опубликовывая ваше хобби на онлайн-платформе millionhobbies, вы соглашаетесь с тем, что ваше хобби не нарушает правила поведения millionhobbies (о которых можно узнать на нижнем разделе сайта через мини-раздел Правила сайта), и вы несёте всю ответственность за содержание, которое содержит хобби. Администрация вправе удалить хобби без разъяснения причин.</div>
-    </div>
-    <div class="button">
-                <button id="login_button">Создать</div>
-                <div id="icon"></div>
-            </div>
-    
+      </div>
+      <div class="button">
+        <button id="login_button">Создать</div>
+        <div id="icon"></div>
+      </div>
+    </form>
     <div class="down_page_global">
         <div class="down_page_global_list1">
             <a href="http://host1877556.hostland.pro/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
