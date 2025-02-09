@@ -196,21 +196,29 @@
         </nav>
     </header>
     <div class="search_results">
-        <div class="search_results-title">Нашли <b>{{ hobby_found_result }}</b> хобби по вашему поиску</div>
+        <div class="search_results-title">Нашли <b>{{ hobby_result }}</b> хобби по вашему поиску</div>
+        <div class="search_results-title">Найти другое</div>
     </div>
-    <div class="search-field">
-        <div class="search-field-title" id="q"></div>
-        <div class="search-field-description" id="q"></div>
-        <div class="search-field_search">
-            <div class="search-field_search_input">
-                <input class="search-input" placeholder="@пользователь, тег">
+    {% if results %}
+        {% for hobby in results %}
+            <div class="search-result_button">
+                <div class="search-result_button-title" id="w">
+                   {{ hobby.title }}
+                </div>
+                <div class="search-result_button-desc" id="w">
+                    {{ hobby.desc }}
+                </div>
+                <div class="search-result_button-user" id="w">
+                    @{{ hobby.uniquename }} <b>{{ hobby.name }}</b>
+                </div>
+                <div class="search-result_button-write">
+                    <form action=link><button class="write-me">Написать</button></form>
+                </div>
             </div>
-            <div class="search-field_search_button">
-                <button class="search-button">Поиск</button>
-            </div>
-        </div>
-    </div>
-
+        {% endfor %}
+    {% else %}
+        <div class="search-result_button-title">Ничего такого не найдено, что могло следовать вашим словам.</div>
+    {% endif %}
     <div class="down_page_global">
         <div class="down_page_global_list1">
             <a href="http://host1877556.hostland.pro/templates/rules.html" class="down_page_global_1_community-guildlines" id="link">Правила сайта</a>
